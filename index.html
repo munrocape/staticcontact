@@ -1,1 +1,59 @@
-Static Contact is the easiest way to add a contact form to any webpage.
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="staticcontact.css">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Static Contact</h1>
+				<h3>The easiest way to add a contact form to any page.</h3>
+			</div>
+		</div>
+		<div id="what-is-it" class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Perfect for any page</h4>
+					<p></p>
+				</div>
+				<div class="col-md-6">
+					<h4>Free</h4>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div id="add-one" class="container">
+			<p>All that is required is to set the action attribute on a HTML form to be {url_tbd}contact/{your_email}.</p>
+			<p>The name, email, and message elements are required and must have those ids. The subject element is optional.</p>
+			<script src="https://gist.github.com/munrocape/9d9f2df6609907516f05.js"></script>
+			<p>Typically, on submission of a form, a user is redirected to an alternate page. The javascript below (which requires jQuery) will submit the form but not redirect the user.</p>
+			<script src="https://gist.github.com/munrocape/1d7c69cd993116ea52f3.js"></script>
+		</div>
+		<div id="try-it-out" class="container">
+			<form>
+			  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 form-group">
+			    <input type="name" class="form-control" id="name" placeholder="Name">
+			  </div>
+			  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 form-group">
+			    <input type="email" class="form-control" id="email" placeholder="Email">
+			  </div>
+			  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 form-group">
+			    <textarea type="message" class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+			  </div>
+
+			  <button id="submit-button" type="submit" class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="https://www.github.com/munrocape/staticcontact"><h4>View the project on GitHub</h4></a>
+					<p>Made with <span class="heart">&#9829;</span> in Bermuda</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
